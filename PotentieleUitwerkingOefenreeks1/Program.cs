@@ -1,4 +1,5 @@
 ﻿using System;
+using PotentieleUitwerkingOefenreeks1.Extensions;
 
 namespace PotentieleUitwerkingOefenreeks1
 {
@@ -6,7 +7,23 @@ namespace PotentieleUitwerkingOefenreeks1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var ingaveString = "Joachim Francois";
+
+            Console.WriteLine(ingaveString.Omdraaier());
+
+            Console.WriteLine(ingaveString.Omdraaier().LaatsteLetter());
+
+            Console.WriteLine(8.Machtsverheffing(2));
+            var getal = 10;
+            Console.WriteLine(getal.Machtsverheffing(4));
+
+            var points = new Points();
+
+            
+            Console.WriteLine(points.SumOfMaxPoints());
+
+
+            Console.ReadKey();
         }
     }
 }
